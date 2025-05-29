@@ -1,0 +1,50 @@
+{
+    "game_title": "Falling Blocks",
+    "screen_dimensions": {
+        "width": 600,
+        "height": 800
+    },
+    "background_color": [20, 20, 20],
+    "entities": [
+        {
+            "id": "player_character",
+            "type": "player",
+            "color": [0, 255, 0],
+            "position": {"x": 275, "y": 700},
+            "size": {"width": 50, "height": 50},
+            "is_controllable": true,
+            "movement_pattern": "player_horizontal_control",
+            "speed": 10
+        },
+        {
+            "id": "obstacle_1",
+            "type": "obstacle",
+            "color": [255, 0, 0],
+            "position": {"x": 100, "y": 0},
+            "size": {"width": 50, "height": 50},
+            "movement_pattern": "falling_down",
+            "speed": 5
+        },
+        {
+            "id": "obstacle_2",
+            "type": "obstacle",
+            "color": [255, 0, 0],
+            "position": {"x": 300, "y": -100},
+            "size": {"width": 50, "height": 50},
+            "movement_pattern": "falling_down",
+            "speed": 5
+        },
+        {
+            "id": "obstacle_3",
+            "type": "obstacle",
+            "color": [255, 0, 0],
+            "position": {"x": 500, "y": -200},
+            "size": {"width": 50, "height": 50},
+            "movement_pattern": "falling_down",
+            "speed": 5
+        }
+    ],
+    "game_rules": [
+        "Dodge the red blocks!"
+    ]
+}

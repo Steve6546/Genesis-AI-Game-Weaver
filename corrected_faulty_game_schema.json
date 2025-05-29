@@ -1,0 +1,107 @@
+{
+    "game_title": "Top-Down Shooter - Corrected (Simulated)",
+    "screen_dimensions": {
+        "width": 800,
+        "height": 600
+    },
+    "background_color": [
+        20,
+        20,
+        20
+    ],
+    "entities": [
+        {
+            "name": "shooter_player",
+            "id": "player_1",
+            "type": "player",
+            "color": [
+                0,
+                200,
+                0
+            ],
+            "shape": "rectangle",
+            "size": {
+                "width": 40,
+                "height": 40
+            },
+            "position": {
+                "x": 380,
+                "y": 500
+            },
+            "is_controllable": true,
+            "movement_pattern": "player_omni_directional_control",
+            "speed": 4,
+            "health_points": 10,
+            "can_shoot": true,
+            "projectile_archetype": {
+                "id_prefix": "p_bullet_",
+                "name_prefix": "Player Bullet ",
+                "type": "projectile",
+                "shape": "circle",
+                "size": {
+                    "radius": 5
+                },
+                "color": [
+                    0,
+                    255,
+                    255
+                ],
+                "speed": 12,
+                "movement_pattern": "projectile_movement",
+                "damage": 1,
+                "cooldown_ms": 200
+            }
+        },
+        {
+            "name": "basic_enemy_1",
+            "id": "enemy_1",
+            "type": "enemy",
+            "color": [
+                200,
+                0,
+                0
+            ],
+            "shape": "rectangle",
+            "size": {
+                "width": 50,
+                "height": 50
+            },
+            "position": {
+                "x": 100,
+                "y": 100
+            },
+            "movement_pattern": "static",
+            "speed": 0,
+            "health_points": 3,
+            "is_controllable": false
+        },
+        {
+            "name": "basic_enemy_2",
+            "id": "enemy_2",
+            "type": "enemy",
+            "color": [
+                200,
+                0,
+                0
+            ],
+            "shape": "rectangle",
+            "size": {
+                "width": 50,
+                "height": 50
+            },
+            "position": {
+                "x": 650,
+                "y": 150
+            },
+            "movement_pattern": "static",
+            "speed": 0,
+            "health_points": 3,
+            "is_controllable": false
+        }
+    ],
+    "game_rules": [
+        "Top-Down Shooter!",
+        "Use Arrow Keys to Move. Space to Shoot.",
+        "Destroy the red enemies."
+    ]
+}

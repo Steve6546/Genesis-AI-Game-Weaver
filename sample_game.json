@@ -1,0 +1,24 @@
+{
+    "game_title": "Sample JSON Game",
+    "screen_dimensions": {
+        "width": 600,
+        "height": 400
+    },
+    "background_color": [50, 50, 100],
+    "entities": [
+        {
+            "id": "player_character",
+            "type": "player",
+            "color": [255, 255, 0],
+            "position": {"x": 100, "y": 100},
+            "size": {"width": 40, "height": 60}
+        },
+        {
+            "id": "red_enemy",
+            "type": "enemy",
+            "color": [200, 0, 50],
+            "position": {"x": 400, "y": 250},
+            "size": {"width": 50, "height": 50}
+        }
+    ]
+}

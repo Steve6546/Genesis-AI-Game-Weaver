@@ -1,0 +1,36 @@
+{
+    "game_title": "My Gemini Game",
+    "screen_dimensions": {
+        "width": 800,
+        "height": 600
+    },
+    "background_color": [200, 200, 255],
+    "entities": [
+        {
+            "id": "player1",
+            "type": "player",
+            "color": [0, 0, 255],
+            "position": {
+                "x": 50,
+                "y": 50
+            },
+            "size": {
+                "width": 50,
+                "height": 50
+            }
+        },
+        {
+            "id": "target1",
+            "type": "target",
+            "color": [255, 0, 0],
+            "position": {
+                "x": 200,
+                "y": 200
+            },
+            "size": {
+                "width": 50,
+                "height": 50
+            }
+        }
+    ]
+}

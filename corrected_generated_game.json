@@ -1,0 +1,85 @@
+{
+    "game_title": "Faulty Game - Corrected (Simulated)",
+    "screen_dimensions": {
+        "width": 800,
+        "height": 600
+    },
+    "background_color": [
+        0,
+        0,
+        50
+    ],
+    "entities": [
+        {
+            "name": "faulty_player_corrected",
+            "id": "faulty_player_corrected_sim_1",
+            "type": "player",
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "shape": "rectangle",
+            "size": {
+                "width": 50,
+                "height": 50
+            },
+            "position": {
+                "x": 375,
+                "y": 500
+            },
+            "speed": 5,
+            "movement_pattern": "player_horizontal_control",
+            "is_controllable": true
+        },
+        {
+            "name": "falling_obstacle_corrected",
+            "id": "obs_c2",
+            "type": "obstacle",
+            "color": [
+                255,
+                0,
+                0
+            ],
+            "shape": "circle",
+            "size": {
+                "radius": 20
+            },
+            "position": {
+                "x": 400,
+                "y": 50
+            },
+            "speed": 3,
+            "movement_pattern": "falling_down",
+            "is_controllable": false
+        },
+        {
+            "name": "patrolling_guard_corrected",
+            "id": "guard_c2",
+            "type": "enemy",
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "shape": "rectangle",
+            "size": {
+                "width": 40,
+                "height": 40
+            },
+            "position": {
+                "x": 100,
+                "y": 100
+            },
+            "speed": 2,
+            "movement_pattern": "moving_left_right_patrol",
+            "is_controllable": false
+        }
+    ],
+    "game_rules": [
+        "Corrected: Player moves L/R.",
+        "Corrected: Avoid falling circle.",
+        "Corrected: Beware of patrol.",
+        "This schema was corrected by Gemini (Simulated)."
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "game_title": "Faulty Game for Correction Test",
+    "screen_dimensions": {
+        "width": 800,
+        "height": 600
+    },
+    "background_color": [
+        0,
+        0,
+        50
+    ],
+    "entities": [
+        {
+            "name": "faulty_player",
+            "id": "faulty_player_1",
+            "type": "player",
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "shape": "rectangle",
+            "size": {
+                "width": 50,
+                "height": 50
+            },
+            "position": [
+                375,
+                500
+            ],
+            "speed": 5,
+            "movement_pattern": "player_horizontal_control"
+        }
+    ],
+    "game_rules": [
+        "This schema is intentionally faulty."
+    ]
+}
